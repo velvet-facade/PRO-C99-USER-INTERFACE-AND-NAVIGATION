@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   header: {
-    fontWeight: 'bold',
+   // fontWeight: 'bold',
     textAlign: 'center',
     fontSize: 25,
     color: '#fff',
@@ -116,6 +116,7 @@ const styles = StyleSheet.create({
   btnText: {
     fontWeight: 'bold',
     color: '#990099',
+    fontSize: 15,
     fontFamily: 'Jost',
-  },
+  }
 });
