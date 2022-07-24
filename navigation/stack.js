@@ -12,7 +12,7 @@ const StackNav = () => {
   return(
     <NavigationContainer>
      <Stack.Navigator initialRouteName="Entry" screenOptions={{
-        headerShown: false
+        headerShown: false 
       }}>
         <Stack.Screen name="Entry" component={EntryScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />

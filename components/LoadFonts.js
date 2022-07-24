@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   Image,
+  SafeAreaView
 } from 'react-native';
 import Constants from 'expo-constants';
 import * as Font from 'expo-font';

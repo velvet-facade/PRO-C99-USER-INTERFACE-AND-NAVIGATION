@@ -21,6 +21,7 @@ import EntryScreen from './screens/Entry';
 import HomeScreen from './screens/Home';
 import JostFont from './components/LoadFonts';
 import StackNav from './navigation/stack';
+import RegisterScreen from './screens/register';
 
 // or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
