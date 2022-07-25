@@ -6,21 +6,23 @@ import {
   TextInput,
   TouchableOpacity,
   Image,
+  SafeAreaView
 } from 'react-native';
 import Constants from 'expo-constants';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
 
 let customFonts = {
-  Jost: require('../assets/Jost-VariableFont_wght.ttf'),
-}
+  StylishCalifornia: require('../assets/fonts/StylishCalifornia.ttf'),
+  Jost: require('../assets/fonts/Jost-VariableFont_wght.ttf')
+};
 
 // You can import from local files
 import EntryScreen from '../screens/Entry';
-import HomeScreen from '../screens/Home';
 import StackNav from '../navigation/stack';
+import LoadingScreen from './load';
 
-export default class JostFont extends Component{
+export default class MeraFonts extends Component{
   constructor(props) {
     super(props);
     this.state = {
@@ -38,9 +40,9 @@ export default class JostFont extends Component{
   
   render(){
     if (!this.state.fontsLoaded) {
-      return <AppLoading />;
+      return <LoadingScreen />;
     } else {
-      return <EntryScreen/> , <StackNav/>
+      return <StackNav/>
     }
   }
 }

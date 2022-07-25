@@ -19,7 +19,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 // You can import from local files
 import EntryScreen from './screens/Entry';
 import HomeScreen from './screens/Home';
-import JostFont from './components/LoadFonts';
+import RegisterScreen from './screens/register';
+import ResetPwScreen from './screens/resetPw';
+import MeraFonts from './components/LoadFonts';
 import StackNav from './navigation/stack';
 
 // or any pure javascript modules available in npm
@@ -27,6 +29,6 @@ import { Card } from 'react-native-paper';
 
 export default class App extends Component{
   render(){
-    return <JostFont/>
+    return <MeraFonts/>
   }
 }
