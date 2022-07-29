@@ -1,25 +1,19 @@
-import * as React from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-} from 'react-native';
-import Constants from 'expo-constants';
-import 'react-native-gesture-handler';
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import React, { Component } from 'react';
+import { Text, View, StyleSheet, Font } from 'react-native';
 
 // You can import from local files
-import EntryScreen from './screens/Entry';
-import HomeScreen from './screens/Home';
-import StackNav from './navigation/stack';
-
+import EntryScreen from './components/Screens/Entry';
 // or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
+import AppLoading from 'expo-app-loading';
 
-export default function App() {
-  return <StackNav />;
+
+export default class App extends Component {
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <EntryScreen />
+      </View>
+    );
+  }
 }
