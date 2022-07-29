@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "ST-83-Solution",
-    "slug": "ST-83-Solution",
+    "name": "mature-candy",
+    "slug": "snack-f1a0f057-36cc-42ee-8239-2973a448e057",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
